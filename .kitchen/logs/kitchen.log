@@ -1,0 +1,38 @@
+I, [2014-03-30T16:06:55.309351 #24691]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-03-30T16:06:55.341420 #24691] ERROR -- Kitchen: ------Exception-------
+E, [2014-03-30T16:06:55.341551 #24691] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-03-30T16:06:55.341615 #24691] ERROR -- Kitchen: Message: Vagrant 1.1.0 or higher is not installed. Please download a package from http://downloads.vagrantup.com/.
+E, [2014-03-30T16:06:55.341676 #24691] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-03-30T16:06:55.341740 #24691] ERROR -- Kitchen: Class: Errno::ENOENT
+E, [2014-03-30T16:06:55.341803 #24691] ERROR -- Kitchen: Message: No such file or directory - vagrant --version
+E, [2014-03-30T16:06:55.341865 #24691] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-03-30T16:06:55.341933 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:207:in `rescue in vagrant_version'
+E, [2014-03-30T16:06:55.342056 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:204:in `vagrant_version'
+E, [2014-03-30T16:06:55.342118 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:212:in `check_vagrant_version'
+E, [2014-03-30T16:06:55.342180 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:100:in `verify_dependencies'
+E, [2014-03-30T16:06:55.342240 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:45:in `for_plugin'
+E, [2014-03-30T16:06:55.342301 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-03-30T16:06:55.342362 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-03-30T16:06:55.342421 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-03-30T16:06:55.342479 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-03-30T16:06:55.342542 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-03-30T16:06:55.342603 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-03-30T16:06:55.342662 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-03-30T16:06:55.342723 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-03-30T16:06:55.342780 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-03-30T16:06:55.342836 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-03-30T16:06:55.342897 #24691] ERROR -- Kitchen: /usr/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-03-30T16:06:55.342954 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-03-30T16:06:55.343011 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-03-30T16:06:55.343070 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-03-30T16:06:55.343125 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-03-30T16:06:55.343184 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-03-30T16:06:55.343243 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-03-30T16:06:55.343305 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-03-30T16:06:55.343498 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-03-30T16:06:55.343558 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-03-30T16:06:55.343615 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-03-30T16:06:55.343674 #24691] ERROR -- Kitchen: /var/lib/gems/1.9.1/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-03-30T16:06:55.343732 #24691] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `load'
+E, [2014-03-30T16:06:55.343787 #24691] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `<main>'
+E, [2014-03-30T16:06:55.343843 #24691] ERROR -- Kitchen: ----------------------
